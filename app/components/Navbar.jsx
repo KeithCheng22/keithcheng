@@ -72,7 +72,7 @@ const Navbar = () => {
 
     <nav className='min-[600px]:hidden sticky top-0 w-[100%] mx-auto max-w-[1200px] z-10'>
         {/* mobile */}
-        <section className='border flex justify-between bg-white text-slate-800 py-3 px-2 rounded-t-none rounded-b-md items-center'>
+        <section className='border flex justify-between bg-white text-slate-800 py-4 px-2 rounded-t-none rounded-b-md items-center'>
           <LinkCom href='/' ariaLabel='Home Page' title='Keith Cheng'/>
           <div className={`transition-opacity duration-1000 flex flex-col gap-1 cursor-pointer ${toggleMenu ? 'opacity-100' : 'opacity-0'}`} onClick={() => setToggleMenu(toggle => !toggle)}>
             <div className="w-5 h-[0.1em] bg-slate-800"></div>

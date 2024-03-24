@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, Suspense } from 'react';
 import emailjs from '@emailjs/browser';
 import toast, { Toaster } from 'react-hot-toast';
 import gsap from "gsap";
@@ -113,11 +113,11 @@ const Contact = () => {
                 <span className="z-0 relative font-semibold">
                     {isLoading ? "Sending" : "Let's Connect!"}
 
-                    <span className={`inline-block transition-opacity opacity-0 ${isLoading ? 'opacity-100 visible w-fit' : 'invisible w-0'}  duration-1000 delay-0`}>.</span>
+                    <span className={`inline-block transition-opacity ${isLoading ? 'opacity-100' : ' invisible w-0'}  duration-1000 delay-0`}>.</span>
 
-                    <span className={`inline-block transition-opacity opacity-0 ${isLoading ? 'opacity-100 visible w-fit' : 'invisible w-0'} w-fit duration-1000 delay-[1000ms]`}>.</span>
+                    <span className={`inline-block transition-opacity opacity-0 ${isLoading ? 'opacity-100' : 'invisible w-0'} w-fit duration-1000 delay-[1000ms]`}>.</span>
 
-                    <span className={`inline-block transition-opacity opacity-0 ${isLoading ? 'opacity-100 visible w-fit' : 'invisible w-0'} w-fit duration-1000 delay-[2000ms]`}>.</span>
+                    <span className={`inline-block transition-opacity opacity-0 ${isLoading ? 'opacity-100' : 'invisible w-0'} w-fit duration-1000 delay-[2000ms]`}>.</span>
 
                 </span>
             </button>
@@ -125,13 +125,14 @@ const Contact = () => {
         </form>
 
         <div className='formInput min-[800px]:col-start-2 flex items-center opacity-0'>
-            <Canvas className='w-[60%] jar' camera={{position: [0, 0, 10], fov: 30, near: 1, far: 40}}>
-                <Scene rotation-x={0.5} />
-                <ContactShadows position={[0, -1.8, 0]} opacity={0.65} scale={40} blur={1} far={9} />
-                <Environment preset='forest' />
-                <OrbitControls enableZoom={false}/>
-            </Canvas>
-
+            <Suspense fallback={null}>
+                <Canvas className='w-[60%] jar' camera={{position: [0, 0, 10], fov: 30, near: 1, far: 40}}>
+                    <Scene rotation-x={0.5} />
+                    <ContactShadows position={[0, -1.8, 0]} opacity={0.65} scale={40} blur={1} far={9} />
+                    <Environment preset='forest' />
+                    <OrbitControls enableZoom={false}/>
+                </Canvas>
+            </Suspense>
             <h1 className='font-bold w-[35%]'>Hover me! <PiArrowBendDownLeftFill /></h1>
         </div>
     </section>
