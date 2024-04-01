@@ -1,5 +1,16 @@
 export const projects = [
     {
+        title: "Travel Tracker",
+        techStack: "Express | EJS | PostgreSQL",
+        img: "../../travel.png",
+        date: "Sunday, 31 March, 2024",
+        demo: 'https://youtu.be/1nba58JYGAw',
+        objectives: "The objectives of this project was to familiarise myself with using Express, EJS and Postgres. While I have tinkered with Express before, I mainly used it as a backend to complement my React Apps, rather than EJS to render web pages. I thought that it was worth a try to understand how EJS works through an interesting project that allows users to track the countries they have been to.",
+        challenges: 'At the start, the EJS templates were quite confusing as they looked quite cryptic, such as <%= %>, or <% %>. However, it got better as I got used to it, and I realised the concept is similar to the Django framework, where we pass in extra arguments to the res.render(), and it will be reflected onto the client side. The main challenge I had was when it came to using loops on the client side, because EJS requires us to put the <% %> syntax or equivalent for every line of server side code, which was not very intuitive, as I would normally wrap the whole loop in the syntax.',
+        learning: "Overall, this project was a fun and simple one to build. I now have a better understanding of the templating languaged used by EJS, partials, and what they mean. Building this project also gave me a refresher of vanilla JS, reminding me of how things are abit more complicated to achieve with it, and all the powerful abstractions given to me whenever I use React or Next. Working with Postgres was not too difficult, I used the node-postgres package to create a client and connect the backend to my database. Being an SQL DB, the queries used were largely similar to the ones I already know."
+
+    },
+    {
         title: "Creative Portfolio",
         techStack: "Next.js | Three.js | GSAP",
         img: "../../creativePort.png",
