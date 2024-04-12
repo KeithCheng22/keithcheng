@@ -1,5 +1,15 @@
 export const projects = [
     {
+        title: "Expense Tracker",
+        techStack: "Vue.js",
+        img: "../../expense.png",
+        date: "Friday, 12 April, 2024",
+        demo: 'https://kc-expense-tracker.vercel.app',
+        objectives: "The concept of this project was simple as it served as a first touchpoint for Vue.js. I wanted to expand my knowledge on other front-end technologies and see how they compare to React.js",
+        challenges: 'When I first learnt Vue, I got exposed to the options API. However, I soon realised that there was also a composition API. At the start, I was confused between the two, as the tutorial taught me the options version, but when I consulted the documentation, most of them worked with the Composition API. This led to a slower development process, and also time spent trying to understand the concepts of ref, reactive, and emit. These are important to declare at the start of any variable, if we require them to mutate or be reactive.',
+        learning: "This project gave me a solid understanding of the basics of Vue. In hindsight, the composition API does provide a more declarative way of writing code which I prefer, and it reduces the boilerplate code needed, especially with the Script SetUp. In terms of concepts, the use of defineProps and components were not foreign to me, but I did learn that directives powers Vue's reactivity. In learning basic Directives like v-on, v-for, v-if, v-model, I managed to built an app that was reactive and able to conditionally render data. I also learnt more about Attribute, Class and Style Binding, which allows for reactivity. Moreover, Vue has a unique way of passing data from child components to parents via Emits/Custom Events, which was refreshing to learn. Lastly, I added Toast Notifications, as well as Local Storage to provide a better UX."
+    },
+    {
         title: "Travel Tracker",
         techStack: "Express | EJS | PostgreSQL",
         img: "../../travel.png",
