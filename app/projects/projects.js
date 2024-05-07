@@ -1,9 +1,29 @@
 export const projects = [
     {
+        title: "Eat Where",
+        techStack: "Vue.js | Express.js",
+        img: "../../eatWhere.png",
+        date: "Tuesday, May 7, 2024",
+        demo: 'https://eat-where-ah.vercel.app',
+        objectives: "My partner and I always can't seem to decide what to eat. Hence, this project came as an inspiration to build something for the indecisive Singaporeans.",
+        challenges: 'This project was more complex compared to the other two below. I had to find a way to get the registered restuarants in SG, which after sourcing awhile, I landed on the Yelp API. I also had to use the Geolocation API to get the location of users. This meant that I needed a back-end to handle the incoming requests. Moreover, due to needing multiple pages but still retaining its nature as a SPA, I had to introduce conditionals to manipulate the DOM to render the correct UI. I also wanted to provide a loading skeleton for a better UX. Lastly, I added accesibility best practices to make the app more holistic.',
+        learning: "Seeing the completed project felt rewarding! I felt like I have levelled up my understading of Vue in terms of not only using it to build simple SPA, but also to incorporate a back-end using Express, culminating into a full-stack application. There are other features that could be expanded on this project, such as filtering. However, noting that the project is bounded by the options provided by the Yelp API, not all restuarants would be provided by the web app, but it is a good start. I look forward to more options listed on Yelp!"
+    },
+    {
+        title: "What Todo",
+        techStack: "Vue.js | Tailwind",
+        img: "../../vuetodo.png",
+        date: "Monday, April 15, 2024",
+        demo: 'https://whattodoah.vercel.app',
+        objectives: "This project was an extension to the Expense Tracker to consolidate my knowledge on Vue. I also wanted to create something that was practical and at the same time conceptually simple.",
+        challenges: 'The main challenge to this project was the styling. I wanted the options to show different colours and not the default. However, such options were not stylable, and I had to improvise. Unlike other todo apps where there may be a specific page to edit todos, mine uses input boxes to edit and create todos. That itself posed challenges in getting the data to persist.',
+        learning: "This project allowed me to reinforce my understanding of State Management, Data binding and CRUD Operations in Vue."
+    },
+    {
         title: "Expense Tracker",
         techStack: "Vue.js",
         img: "../../expense.png",
-        date: "Friday, 12 April, 2024",
+        date: "Friday, April 12, 2024",
         demo: 'https://kc-expense-tracker.vercel.app',
         objectives: "The concept of this project was simple as it served as a first touchpoint for Vue.js. I wanted to expand my knowledge on other front-end technologies and see how they compare to React.js",
         challenges: 'When I first learnt Vue, I got exposed to the options API. However, I soon realised that there was also a composition API. At the start, I was confused between the two, as the tutorial taught me the options version, but when I consulted the documentation, most of them worked with the Composition API. This led to a slower development process, and also time spent trying to understand the concepts of ref, reactive, and emit. These are important to declare at the start of any variable, if we require them to mutate or be reactive.',
@@ -13,11 +33,11 @@ export const projects = [
         title: "Travel Tracker",
         techStack: "Express | EJS | PostgreSQL",
         img: "../../travel.png",
-        date: "Sunday, 31 March, 2024",
+        date: "Sunday, March 31, 2024",
         demo: 'https://youtu.be/1nba58JYGAw',
         objectives: "The objectives of this project was to familiarise myself with using Express, EJS and Postgres. While I have tinkered with Express before, I mainly used it as a backend to complement my React Apps, rather than EJS to render web pages. I thought that it was worth a try to understand how EJS works through an interesting project that allows users to track the countries they have been to.",
         challenges: 'At the start, the EJS templates were quite confusing as they looked quite cryptic, such as <%= %>, or <% %>. However, it got better as I got used to it, and I realised the concept is similar to the Django framework, where we pass in extra arguments to the res.render(), and it will be reflected onto the client side. The main challenge I had was when it came to using loops on the client side, because EJS requires us to put the <% %> syntax or equivalent for every line of server side code, which was not very intuitive, as I would normally wrap the whole loop in the syntax.',
-        learning: "Overall, this project was a fun and simple one to build. I now have a better understanding of the templating languaged used by EJS, partials, and what they mean. Building this project also gave me a refresher of vanilla JS, reminding me of how things are abit more complicated to achieve with it, and all the powerful abstractions given to me whenever I use React or Next. Working with Postgres was not too difficult, I used the node-postgres package to create a client and connect the backend to my database. Being an SQL DB, the queries used were largely similar to the ones I already know."
+        learning: "Overall, this project was a fun and simple one to build. I now have a better understanding of the templating language used by EJS, partials, and what they mean. Building this project also gave me a refresher of vanilla JS, reminding me of how things are abit more complicated to achieve with it, and all the powerful abstractions given to me whenever I use React or Next. Working with Postgres was not too difficult, I used the node-postgres package to create a client and connect the backend to my database. Being an SQL DB, the queries used were largely similar to the ones I already know."
 
     },
     {
