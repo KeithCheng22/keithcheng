@@ -1,7 +1,7 @@
 export const eduBg = [
     {
-        studied: "Bachelor of Science (Software Engineering)",
-        school: "Singapore Management University",
+        studied: "Bachelor of Computing in Computer Science",
+        school: "National University of Singapore",
         year: "2024-2028",
         results: "Prospective Student"
     },
@@ -21,9 +21,15 @@ export const eduBg = [
 
 export const workBg = [
     {
+        position: "Full Stack Developer",
+        work: "OurCodeLab",
+        year: "MAY 24 - Present",
+        jd: ``
+    },
+    {
         position: "Data Entry Specialist & Administrative Assistant",
         work: "XJPIT",
-        year: "DEC 23 - Present",
+        year: "DEC 23 - MAY 24",
         jd: `● Proficiently uploaded and maintained accurate data in the database, ensuring completeness, correctness, and proper categorization, labeling, and specifications.
         ● Collaborated effectively with internal teams to gather and update information promptly, fostering a streamlined flow of data.
         ● Diligently monitored inventory changes and consistently maintained up-to-date records to support operational efficiency.
